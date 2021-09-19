@@ -5,41 +5,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevFarouqk</title>
+    <!-- Fonts family  --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!--Font awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/main.css">
     <style>
         * {
             padding: 0;
             margin: 0;
+            box-sizing: border-box;
         }
 
         *::before,
         *::after {
             padding: 0;
             margin: 0;
+            box-sizing: border-box;
         }
 
-html {
-    font-size: 62.5%;
-}
+        html {
+            font-size: 62.5%;
+        }
 
         body {
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container {
+            padding: 0 2.4rem;
+            margin: 0 auto;
         }
 
         h1 {
             font-size: clamp(3.5rem, 5.0rem, 10rem);
             display: block;
         }
+
+        .excla {
+            color: #589cc1;
+        }
+
+        p {
+            font-size: clamp(2.5rem, 3.0rem, 4.5rem);
+            display: block;
+            text-align: center;
+            margin: .5rem;
+        }
+
+        .center {
+            position: relative;
+            margin-top: -5rem;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 23.5rem;
+            transition: all .5s linear;
+            align-self: center;
+            position: absolute;
+            right: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 1.2rem;
+        }
+
+        /* .icon {
+
+        } */
+
+        .icon:hover {
+            transform: scale(1.1);
+        }
+
+        .fab {
+            font-size: 3.5rem;
+            color: #212121;
+        }
+
+        .fab:hover {
+            color: #589cc1;
+        }
     </style>
 </head>
 <body>
-    <div class="center">
-        <h1>Coming Soon!</h1>
+    <div class="container">
+        <div class="center">
+            <h1>Website under construction <span class='excla'>!</span></h1>
+            <p>Contact me here 👇</p>
+            <div class="icons">
+                <a href="https://twitter.com/mailafiya_umar?s=09" class="icon one">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/devfarouqk/" class="icon two">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/devfarouqk/" class="icon three">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/+2347033806591" class="icon four">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
     </div>
 
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js" defer></script>
 </body>
 </html>
