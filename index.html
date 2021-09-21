@@ -38,8 +38,24 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            color: #f1f1f1;
             height: 100vh;
             font-family: 'Poppins', sans-serif;
+            overflow: hidden;
+            position: relative;
+            background: url(./images/bg.jpg) center no-repeat;
+            z-index: 1000;
+        }
+
+        body::after {
+         position: absolute;
+         content: "";
+         top: 0;
+         left: 0;
+         height: 100%;
+         width: 100%;
+         background-color: #212121b6;
+         z-index: 1500;
         }
 
         .container {
@@ -50,6 +66,7 @@
         h1 {
             font-size: clamp(3.5rem, 5.0rem, 10rem);
             display: block;
+            text-align: center;
         }
 
         .excla {
@@ -66,6 +83,7 @@
         .center {
             position: relative;
             margin-top: -5rem;
+            z-index: 2000;
         }
 
         .icons {
@@ -92,7 +110,7 @@
 
         .fab {
             font-size: 3.5rem;
-            color: #212121;
+            color: #f1f1f1;
         }
 
         .fab:hover {
@@ -117,6 +135,9 @@
                 </a>
                 <a href="https://wa.me/+2347033806591" class="icon four">
                     <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://github.com/reality-farouqk" class="icon five">
+                    <i class="fab fa-github"></i>
                 </a>
             </div>
         </div>
