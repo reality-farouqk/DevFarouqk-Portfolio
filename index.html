@@ -1,148 +1,261 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevFarouqk</title>
-    <!-- Fonts family  --> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <!--Font awesome CDN-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="utf-8">
+  <title>DevFarouqk</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        *::before,
-        *::after {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
 
-        html {
-            font-size: 62.5%;
-        }
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- Place favicon.ico in the root directory -->
 
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            color: #f1f1f1;
-            height: 100vh;
-            font-family: 'Poppins', sans-serif;
-            overflow: hidden;
-            position: relative;
-            background: url(./images/bg.jpg) center no-repeat;
-            z-index: 1000;
-        }
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
 
-        body::after {
-         position: absolute;
-         content: "";
-         top: 0;
-         left: 0;
-         height: 100%;
-         width: 100%;
-         background-color: #212121b6;
-         z-index: 1500;
-        }
-
-        .container {
-            padding: 0 2.4rem;
-            margin: 0 auto;
-        }
-
-        h1 {
-            font-size: clamp(3.5rem, 5.0rem, 10rem);
-            display: block;
-            text-align: center;
-        }
-
-        .excla {
-            color: #589cc1;
-        }
-
-        p {
-            font-size: clamp(2.5rem, 3.0rem, 4.5rem);
-            display: block;
-            text-align: center;
-            margin: .5rem;
-        }
-
-        .center {
-            position: relative;
-            margin-top: -5rem;
-            z-index: 2000;
-        }
-
-        .icons {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 23.5rem;
-            transition: all .5s linear;
-            align-self: center;
-            position: absolute;
-            right: 50%;
-            left: 50%;
-            transform: translateX(-50%);
-            margin-top: 1.2rem;
-        }
-
-        /* .icon {
-
-        } */
-
-        .icon:hover {
-            transform: scale(1.1);
-        }
-
-        .fab {
-            font-size: 3.5rem;
-            color: #f1f1f1;
-        }
-
-        .fab:hover {
-            color: #589cc1;
-        }
-    </style>
+  <meta name="theme-color" content="#fafafa">
+  <!--Font awesome CDN-->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+  />
+   <!--Scroll reveal CDN-->
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
-<body>
-    <div class="container">
-        <div class="center">
-            <h1>Website under construction <span class='excla'>!</span></h1>
-            <p>Contact me here 👇</p>
-            <div class="icons">
-                <a href="https://twitter.com/mailafiya_umar?s=09" class="icon one">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/devfarouqk/" class="icon two">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://www.instagram.com/devfarouqk/" class="icon three">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://wa.me/+2347033806591" class="icon four">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-                <a href="https://github.com/reality-farouqk" class="icon five">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
-        </div>
-    </div>
 
-    <script src="./assets/js/script.js" defer></script>
+<body>
+  <!-- Header starts here  -->
+    <header class="gradient-bg-hero">
+      <nav class="nav">
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-times"></i>
+        </div>
+        <a href="index.html" class="logo">DevFarouqk</a>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <div>
+          <h4>Hello there! 👋</h4>
+          <h1>I'm UmarFarouqk. <br>
+            A web designer and developer.</h1>
+          <a href="#">Contact Me</a>
+        </div>
+        <div class="img-box">
+          <img src="img/hero-img.svg" alt="hero image">
+        </div>
+      </div>
+    </header>
+
+  <!-- About section starts here  -->
+    <section>
+      <div class="img-box">
+        <img src="./img/me-img.png" alt="Facial identity">
+      </div>
+      <div>
+        <h2>About</h2>
+        <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting</p>
+        <div class="skills_logo">
+          <div class="img-box">
+            <img src="./img/icon-html.svg" alt="">
+          </div>
+          <div class="img-box">
+            <img src="./img/icon-css3.svg" alt="">
+          </div>
+          <div class="img-box">
+            <img src="./img/icon-javascript.svg" alt="">
+          </div>
+          <div class="img-box">
+            <img src="./img/icon-react.svg" alt="">
+          </div>
+          <div class="img-box">
+            <img src="./img/icon-material-ui.svg" alt="">
+          </div>
+          <div class="img-box">
+            <img src="./img/icon-sass.svg" alt="">
+          </div>
+          <div class="img-box">
+            <img src="./img/icon-wordpress.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  <!-- Services section starts here  -->
+    <section class="gradient-bg">
+      <div>
+        <h2>Services</h2>
+      </div>
+      <div class="services">
+        <div class="">
+          <div class="img-box">
+            <img src="./img/web design icon.png" alt="">
+          </div>
+          <p>Web Design</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, quia.</p>
+        </div>
+        <div class="">
+          <div class="img-box">
+            <img src="./img/seo icon.png" alt="">
+          </div>
+          <p>Seo</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, sunt!</p>
+        </div>
+        <div class="">
+          <div class="img-box">
+            <img src="./img/google adwords icon.png" alt="">
+          </div>
+          <p>Google Ad words</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, minus.</p>
+        </div>
+      </div>
+    </section>
+
+  <!-- Previous work section starts here  -->
+    <section>
+      <div>
+        <h2>Previous work</h2>
+      </div>
+      <div class="previous_work">
+        <div>
+          <div class="img-box">
+            <img src="./img/prev-1.png" alt="">
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p class="view-site">View site</p>
+        </div>
+        <div>
+          <div class="img-box">
+            <img src="./img/prev-2.png" alt="">
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p class="view-site">View site</p>
+        </div>
+        <div>
+          <div class="img-box">
+            <img src="./img/prev-3.png" alt="">
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <p class="view-site">View site</p>
+        </div>
+      </div>
+    </section>
+
+  <!-- Testimonials section starts here  -->
+    <section class="gradient-bg">
+      <div>
+        <h2>Testimonials</h2>
+      </div>
+
+      <div>
+        <div>
+          <div class="img-box">
+            <img src="./img/Andrew-img.png" alt="">
+          </div>
+          <p class="name-title">Andrew</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae iure aliquam rem eum autem, omnis dolorem quam beatae culpa repellat!</p>
+        </div>
+        <div>
+          <div class="img-box">
+            <img src="./img/Lisa-img.png" alt="">
+          </div>
+          <p class="name-title">Lisa</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est veniam porro dolorem, laborum minus doloribus deserunt necessitatibus ut provident quasi!</p>
+        </div>
+        <div>
+          <div class="img-box">
+            <img src="./img/Jacob-img.png" alt="">
+          </div>
+          <p class="name-title">Jacob</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique obcaecati architecto hic facere reiciendis sapiente eaque quod suscipit, nesciunt cumque.</p>
+        </div>
+      </div>
+    </section>
+
+  <!-- Random Beautiful Carousel Images Starts Here  -->
+    <section>
+      <!-- Carousel  -->
+    </section>
+
+  <!-- Contact section  -->
+    <section class="contact-segment">
+      <div>
+        <div>
+          <h2></h2>
+          <div>
+            <label for="name"></label>
+            <input type="name" name="name" id="name">
+            <label for="email"></label>
+            <input type="email" name="email" id="email">
+            <label for="message"></label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <input type="button" value="Send Message">
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="./img/contact-img.png" alt="">
+      </div>
+    </section>
+
+  <!-- Footer starts here  -->
+    <footer>
+      <div>
+        <a href="#" class="logo">DevFarouqk</a>
+      </div>
+      <div class="site-map">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <a href="#">Blog</a>
+      </div>
+      <div class="social-icon">
+        <!-- icons goes here -->
+      </div>
+    </footer>
+
+  <!-- copyright notice section start heres -->
+    <section>
+      <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    </section>
+
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
+
 </html>
