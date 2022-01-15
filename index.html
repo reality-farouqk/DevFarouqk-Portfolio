@@ -19,6 +19,7 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
@@ -34,215 +35,244 @@
 <body>
   <!-- Header starts here  -->
     <header class="gradient-bg-hero">
-      <nav class="nav">
-        <div class="menu-toggle">
-          <i class="fas fa-bars"></i>
-          <i class="fas fa-times"></i>
-        </div>
+      <!-- <div class="header-nav flex">
         <a href="index.html" class="logo">DevFarouqk</a>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Services</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <div>
-        <div>
-          <h4>Hello there! 👋</h4>
-          <h1>I'm UmarFarouqk. <br>
-            A web designer and developer.</h1>
-          <a href="#">Contact Me</a>
-        </div>
-        <div class="img-box">
-          <img src="img/hero-img.svg" alt="hero image">
+
+        <button aria-controls="primary-nav" aria-expanded="false" class="mobile-nav-toggle"><span class="sr-only">Menu</span></button>
+
+        <nav class="nav">
+          <ul id="primary-nav" class="flex primary-nav">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#" class="">Contact</a>
+            </li>
+             <li>
+              <a href="#">Blog</a>
+            </li> -->
+          <!-- </ul> -->
+        <!-- </nav> -->
+      <!-- </div> --> 
+      
+      <div class="container">
+        <div class="split">
+          <div class="container--narrow">
+            <h4>Hello there!</h4>
+            <h1>I'm UmarFarouqk. <br>
+              A web designer and developer.</h1>
+            <a href="#" class="cta-btn">Contact Me</a>
+          </div>
+          <div class="hero-img-box">
+            <img src="img/hero-img.svg" alt="hero image">
+          </div>
         </div>
       </div>
     </header>
 
   <!-- About section starts here  -->
-    <section>
-      <div class="img-box">
-        <img src="./img/me-img.png" alt="Facial identity">
-      </div>
-      <div>
-        <h2>About</h2>
-        <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting</p>
-        <div class="skills_logo">
-          <div class="img-box">
-            <img src="./img/icon-html.svg" alt="">
+    <section class="about-section">
+      <div class="container split">
+        <div class="about-img-box box-align-center">
+          <img src="./img/me-img.png" alt="Facial identity">
+        </div>
+        <div>
+          <h2 class="text-center">About</h2>
+          <p>The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting</p>
+          
+          <div class="skills_logo split">
+            <div class="img-box">
+              <img src="./img/icon-html.svg" alt="">
+            </div>
+            <div class="img-box">
+              <img src="./img/icon-css3.svg" alt="">
+            </div>
+            <div class="img-box">
+              <img src="./img/icon-javascript.svg" alt="">
+            </div>
+            <div class="img-box">
+              <img src="./img/icon-react.svg" alt="">
+            </div>
+            <div class="img-box">
+              <img src="./img/icon-material-ui.svg" alt="">
+            </div>
+            <div class="img-box">
+              <img src="./img/icon-sass.svg" alt="">
+            </div>
+            <div class="img-box">
+              <img src="./img/icon-wordpress.svg" alt="">
+            </div>
           </div>
-          <div class="img-box">
-            <img src="./img/icon-css3.svg" alt="">
-          </div>
-          <div class="img-box">
-            <img src="./img/icon-javascript.svg" alt="">
-          </div>
-          <div class="img-box">
-            <img src="./img/icon-react.svg" alt="">
-          </div>
-          <div class="img-box">
-            <img src="./img/icon-material-ui.svg" alt="">
-          </div>
-          <div class="img-box">
-            <img src="./img/icon-sass.svg" alt="">
-          </div>
-          <div class="img-box">
-            <img src="./img/icon-wordpress.svg" alt="">
-          </div>
+
         </div>
       </div>
     </section>
   
   <!-- Services section starts here  -->
-    <section class="gradient-bg">
-      <div>
-        <h2>Services</h2>
-      </div>
-      <div class="services">
-        <div class="">
-          <div class="img-box">
-            <img src="./img/web design icon.png" alt="">
-          </div>
-          <p>Web Design</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, quia.</p>
+    <section class="gradient-bg-section">
+      <div class="container">
+        <div class="text-light text-center">
+          <h2>Services</h2>
         </div>
-        <div class="">
-          <div class="img-box">
-            <img src="./img/seo icon.png" alt="">
+        <div class="services split">
+          <div class="box-align-center services-box">
+            <div class="img-box">
+              <img src="./img/web design icon.png" alt="">
+            </div>
+            <p class="text-center text-bold title">Web Design</p>
+            <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, quia.</p>
           </div>
-          <p>Seo</p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, sunt!</p>
-        </div>
-        <div class="">
-          <div class="img-box">
-            <img src="./img/google adwords icon.png" alt="">
+
+          <div class="box-align-center services-box">
+            <div class="img-box">
+              <img src="./img/seo icon.png" alt="">
+            </div>
+            <p class="text-center text-bold title">SEO</p>
+            <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, sunt!</p>
           </div>
-          <p>Google Ad words</p>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, minus.</p>
+          
+          <div class="box-align-center services-box">
+            <div class="img-box">
+              <img src="./img/google adwords icon.png" alt="">
+            </div>
+            <p class="text-center text-bold title">Google Ad words</p>
+            <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, minus.</p>
+          </div>
         </div>
       </div>
     </section>
 
   <!-- Previous work section starts here  -->
     <section>
-      <div>
-        <h2>Previous work</h2>
-      </div>
-      <div class="previous_work">
+      <div class="container">
         <div>
-          <div class="img-box">
-            <img src="./img/prev-1.png" alt="">
-          </div>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
-          <p class="view-site">View site</p>
+          <h2 class="text-center">Past work</h2>
         </div>
-        <div>
-          <div class="img-box">
-            <img src="./img/prev-2.png" alt="">
+        <div class="previous-work split">
+          <div class="box-align-center box">
+            <div class="img-box">
+              <img src="./img/prev-1.png" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <a href="#" class="view-site">View site</a>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
-          <p class="view-site">View site</p>
-        </div>
-        <div>
-          <div class="img-box">
-            <img src="./img/prev-3.png" alt="">
+
+          <div class="box-align-center box">
+            <div class="img-box">
+              <img src="./img/prev-2.png" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <a href="#" class="view-site">View site</a>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
-          <p class="view-site">View site</p>
+
+          <div class="box-align-center box">
+            <div class="img-box">
+              <img src="./img/prev-3.png" alt="">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <a href="#" class="view-site">View site</a>
+          </div>
         </div>
       </div>
     </section>
 
   <!-- Testimonials section starts here  -->
-    <section class="gradient-bg">
-      <div>
-        <h2>Testimonials</h2>
-      </div>
+    <section class="gradient-bg-section testimonial-section">
+      <div class="container">
+        <div>
+          <h2 class="text-light text-center">Testimonials</h2>
+        </div>
 
-      <div>
-        <div>
-          <div class="img-box">
-            <img src="./img/Andrew-img.png" alt="">
+        <div class="container">
+          <div class="split">
+            <div class="flex-center text-center">
+              <div class="img-box">
+                <img src="./img/Andrew-img.png" alt="">
+              </div>
+              <p class="name-title text-bold">Andrew</p>
+              <p class="quote"><span class="quote-symbol">"</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae iure aliquam rem eum autem, omnis dolorem quam beatae culpa repellat!<span class="quote-symbol">"</span></p>
+            </div>
+            <div class="flex-center text-center">
+              <div class="img-box">
+                <img src="./img/Lisa-img.png" alt="">
+              </div>
+              <p class="name-title text-bold">Lisa</p>
+              <p class="quote"><span class="quote-symbol">"</span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est veniam porro dolorem, laborum minus doloribus deserunt necessitatibus ut provident quasi!<span class="quote-symbol">"</span></p>
+            </div>
+            <div class="flex-center text-center">
+              <div class="img-box">
+                <img src="./img/Jacob-img.png" alt="">
+              </div>
+              <p class="name-title text-bold">Jacob</p>
+              <p class="quote"><span class="quote-symbol">"</span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique obcaecati architecto hic facere reiciendis sapiente eaque quod suscipit, nesciunt cumque.<span class="quote-symbol">"</span></p>
+            </div>
           </div>
-          <p class="name-title">Andrew</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae iure aliquam rem eum autem, omnis dolorem quam beatae culpa repellat!</p>
         </div>
-        <div>
-          <div class="img-box">
-            <img src="./img/Lisa-img.png" alt="">
-          </div>
-          <p class="name-title">Lisa</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est veniam porro dolorem, laborum minus doloribus deserunt necessitatibus ut provident quasi!</p>
-        </div>
-        <div>
-          <div class="img-box">
-            <img src="./img/Jacob-img.png" alt="">
-          </div>
-          <p class="name-title">Jacob</p>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique obcaecati architecto hic facere reiciendis sapiente eaque quod suscipit, nesciunt cumque.</p>
-        </div>
+
       </div>
     </section>
 
   <!-- Random Beautiful Carousel Images Starts Here  -->
-    <section>
+    <!-- <section> -->
       <!-- Carousel  -->
-    </section>
+    <!-- </section> -->
 
   <!-- Contact section  -->
     <section class="contact-segment">
-      <div>
+      <div class="split">
         <div>
-          <h2></h2>
-          <div>
-            <label for="name"></label>
-            <input type="name" name="name" id="name">
-            <label for="email"></label>
-            <input type="email" name="email" id="email">
-            <label for="message"></label>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-            <input type="button" value="Send Message">
+          <div class="container contact-spacing">
+            <h2 class="text-center">Contact</h2>
+            <div class="flex-center" style="max-width: 38rem;">
+              <form action="#" class="">
+                <label for="name">Name</label>
+                <input type="name" name="name" id="name">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
+                <input type="button" value="Send Message">
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        <img src="./img/contact-img.png" alt="">
+        <div class="contact-img-box">
+          <img src="./img/contact-img.png" alt="">
+        </div>
       </div>
     </section>
 
   <!-- Footer starts here  -->
-    <footer>
-      <div>
-        <a href="#" class="logo">DevFarouqk</a>
-      </div>
-      <div class="site-map">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-        <a href="#">Blog</a>
-      </div>
-      <div class="social-icon">
-        <!-- icons goes here -->
+    <footer class="footer">
+      <div class="container text-center flex">
+        <div>
+          <a href="#" class="logo text-light">DevFarouqk</a>
+        </div>
+        <div class="site-map flex">
+          <a href="index.html">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+          <!-- <a href="#">Blog</a> -->
+        </div>
+        <div class="social-icon">
+          <!-- icons goes here -->
+        </div>
       </div>
     </footer>
 
   <!-- copyright notice section start heres -->
-    <section>
-      <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-    </section>
+    <div class="copyright-notice-section">
+      <div class="container">
+        <p class="text-center text-light">All right reserved DevFarouqk &copy; 2022</p>
+      </div>
+    </div>
 
 
 
