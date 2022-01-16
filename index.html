@@ -30,36 +30,41 @@
   />
    <!--Scroll reveal CDN-->
   <script src="https://unpkg.com/scrollreveal"></script>
+
+
+  <script src="js/main.js" defer></script>
 </head>
 
 <body>
   <!-- Header starts here  -->
     <header class="gradient-bg-hero">
-      <!-- <div class="header-nav flex">
-        <a href="index.html" class="logo">DevFarouqk</a>
-
-        <button aria-controls="primary-nav" aria-expanded="false" class="mobile-nav-toggle"><span class="sr-only">Menu</span></button>
-
-        <nav class="nav">
-          <ul id="primary-nav" class="flex primary-nav">
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
-              <a href="#" class="">Contact</a>
-            </li>
-             <li>
-              <a href="#">Blog</a>
-            </li> -->
-          <!-- </ul> -->
-        <!-- </nav> -->
-      <!-- </div> --> 
+      <div class="container">
+        <div class="header-nav flex">
+          <a href="index.html" class="logo">
+            <img src="./img/DevFarouqk.png" alt="">
+          </a>
+          <button aria-controls="primary-nav" aria-expanded="false" class="mobile-nav-toggle"><span class="sr-only">Menu</span></button>
+          <nav class="nav">
+            <ul id="primary-nav" data-visible="false" class="flex primary-nav">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Services</a>
+              </li>
+              <li>
+                <a href="#" class="nav-cta-btn">Contact</a>
+              </li>
+               <!-- <li>
+                <a href="#">Blog</a>
+              </li> -->
+            </ul>
+          </nav>
+        </div>
+      </div>
       
       <div class="container">
         <div class="split">
@@ -278,7 +283,6 @@
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
