@@ -16,7 +16,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/nav.css">
@@ -29,8 +28,15 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
   />
    <!--Scroll reveal CDN-->
-  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
 
+  <!-- font awesome icons kit link  -->
+  <script src="https://kit.fontawesome.com/5da604368e.js" crossorigin="anonymous"></script>
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
 
   <script src="js/main.js" defer></script>
 </head>
@@ -50,13 +56,13 @@
                 <a href="index.html">Home</a>
               </li>
               <li>
-                <a href="#">About</a>
+                <a href="#about-sec">About</a>
               </li>
               <li>
-                <a href="#">Services</a>
+                <a href="#service-sec">Services</a>
               </li>
               <li>
-                <a href="#" class="nav-cta-btn">Contact</a>
+                <a href="#contact-sec" class="nav-cta-btn">Contact</a>
               </li>
                <!-- <li>
                 <a href="#">Blog</a>
@@ -69,10 +75,10 @@
       <div class="container">
         <div class="split">
           <div class="container--narrow">
-            <h4>Hello there!</h4>
+            <h4>Hello!</h4>
             <h1>I'm UmarFarouqk. <br>
               A web designer and developer.</h1>
-            <a href="#" class="cta-btn">Contact Me</a>
+            <a href="#contact-sec" class="cta-btn">Contact Me</a>
           </div>
           <div class="hero-img-box">
             <img src="img/hero-img.svg" alt="hero image">
@@ -82,7 +88,7 @@
     </header>
 
   <!-- About section starts here  -->
-    <section class="about-section">
+    <section id="about-sec" class="about-section">
       <div class="container split">
         <div class="about-img-box box-align-center">
           <img src="./img/me-img.png" alt="Facial identity">
@@ -120,7 +126,7 @@
     </section>
   
   <!-- Services section starts here  -->
-    <section class="gradient-bg-section">
+    <section id="service-sec" class="gradient-bg-section">
       <div class="container">
         <div class="text-light text-center">
           <h2>Services</h2>
@@ -224,18 +230,18 @@
     </section>
 
   <!-- Random Beautiful Carousel Images Starts Here  -->
-    <!-- <section> -->
+    <!-- <section > -->
       <!-- Carousel  -->
     <!-- </section> -->
 
   <!-- Contact section  -->
-    <section class="contact-segment">
+    <section id="contact-sec" class="contact-segment">
       <div class="split">
         <div>
           <div class="container contact-spacing">
             <h2 class="text-center">Contact</h2>
             <div class="flex-center" style="max-width: 38rem;">
-              <form action="#" class="">
+              <form action="#">
                 <label for="name">Name</label>
                 <input type="name" name="name" id="name">
                 <label for="email">Email</label>
@@ -257,22 +263,33 @@
     <footer class="footer">
       <div class="container text-center flex">
         <div>
-          <a href="#" class="logo text-light">DevFarouqk</a>
+          <a href="index.html" class="logo text-light">DevFarouqk</a>
         </div>
         <div class="site-map flex">
           <a href="index.html">Home</a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Contact</a>
+          <a href="#about-sec">About</a>
+          <a href="#service-sec">Services</a>
+          <a href="#contact-sec">Contact</a>
           <!-- <a href="#">Blog</a> -->
         </div>
-        <div class="social-icon">
-          <!-- icons goes here -->
+        <div class="social-icon flex">
+          <!--social icons goes here -->
+          <a href="https://twitter.com/mailafiya_umar">
+            <i class="fab fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/devfarouqk/">
+            <i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+          <a href="https://wa.link/hbm56n">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:umar@devfarouqk.tech">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
     </footer>
 
-  <!-- copyright notice section start heres -->
+  <!-- copyright notice section starts heres -->
     <div class="copyright-notice-section">
       <div class="container">
         <p class="text-center text-light">All right reserved DevFarouqk &copy; 2022</p>
