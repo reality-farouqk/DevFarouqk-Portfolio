@@ -451,8 +451,16 @@ header .split {
 }
 
 /* past work styling */
+.previous-work {
+  margin-top: 2rem;
+}
+
 .previous-work > * + *{
   margin-top: 2.5rem;
+}
+
+.previous-work .box .img-box img {
+  border-radius: 5px;
 }
 
 .previous-work .box p {
@@ -534,6 +542,8 @@ margin-top: 2.3rem;
 
 .contact-img-box {
   height: 100%;
+  background: url("../img/contact-img.png") center no-repeat;
+  background-size: cover;
 }
 
 .contact-segment h3 {
@@ -564,7 +574,8 @@ label {
 
 .contact-segment form {
   align-items: flex-start;
-  max-width: 30rem;
+  margin-inline: auto;
+  width: 30rem;
   justify-self: center;
 }
 
@@ -591,7 +602,7 @@ label {
   background: #F5F5F5;
   outline: none;
   border: none;
-  border-radius: 17px;
+  border-radius: 5px;
   box-shadow: 1px 4px 5px rgba(0, 0, 0, .16);
 }
 
