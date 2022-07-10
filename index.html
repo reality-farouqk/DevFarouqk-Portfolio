@@ -30,7 +30,7 @@
   <link rel="manifest" href="/site.webmanifest">
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/nav.css">
+  <!-- <link rel="stylesheet" href="css/nav.css"> -->
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
@@ -46,8 +46,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-  href="https://fonts.googleapis.com/css2?family=Bangers&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-  rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
@@ -64,7 +64,7 @@
           <img src="./img/DevFarouqk.png" alt="">
         </a>
         <button aria-controls="primary-nav" aria-expanded="false" class="mobile-nav-toggle"><span
-          class="sr-only">Menu</span></button>
+            class="sr-only">Menu</span></button>
         <nav class="nav">
           <ul id="primary-nav" data-visible="false" class="flex primary-nav">
             <li>
@@ -82,9 +82,7 @@
             <li>
               <a href="#contact-sec" class="nav-cta-btn">Contact</a>
             </li>
-            <!-- <li>
-                                        <a href="#">Blog</a>
-                                      </li> -->
+            <!-- <li><a href="#">Blog</a></li> -->
           </ul>
         </nav>
       </div>
@@ -121,7 +119,8 @@
           I build websites for business and portfolio websites/landing pages for freelancers and creators.
           I’m passionate about learning several things, from life and ethics to learning about new technologies.
           I’ve worked with several web tech/libraries from Html, CSS, js and react, and so on.
-          I work on my side projects when not freelancing. And when not doing all. I watch anime to make some awesome trips
+          I work on my side projects when not freelancing. And when not doing all. I watch anime to make some awesome
+          trips
           out of reality.
         </p>
 
@@ -306,9 +305,9 @@
           <h2 class="text-center">Contact</h2>
           <h3 class="left-align">send me a message</h3>
           <div class="flex-center" style="max-width: 38rem; align-items: unset; margin-inline: auto;">
-            <form data-netlify="true" name="portfolio-contact" method="post">
+            <form name="portfolio-contact" method="POST" data-netlify="true">
               <label for="name">Name</label>
-              <input type="name" name="name" id="name">
+              <input type="text" name="name" id="name">
               <label for="email">Email</label>
               <input type="email" name="email" id="email">
               <label for="message">Message</label>
@@ -358,7 +357,7 @@
   <div class="copyright-notice-section">
     <div class="container">
       <p class="text-center text-light">
-        All right reserved DevFarouqk <span>&copy;</span> 2022
+        All right reserved DevFarouqk <span style="font-size: 18px;">&copy;</span> 2022
       </p>
     </div>
   </div>
