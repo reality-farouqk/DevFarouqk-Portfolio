@@ -376,7 +376,7 @@ header .split {
   .cta-btn {
     padding: .65rem .7rem;
     border: solid 1px var(--clr-primary-200);
-    font-size: .8em;
+    font-size: 1.25em;
   }
 }
 
@@ -501,6 +501,12 @@ header .split {
   .previous-work > * + * {
     margin-top: 0;
   }
+}
+
+@media (max-width: 40rem) {
+  .previous-work {
+    flex-wrap: wrap;
+  }  
 }
 
 /* Testimonials Styling starts here  */
